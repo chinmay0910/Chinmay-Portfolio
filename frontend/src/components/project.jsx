@@ -11,7 +11,8 @@ const Project = ({
   status = 'Live',
   github,
   live,
-  note                       // <-- NEW
+  note,
+  bgImage
 }) => {
 
   const [highlight, ...rest] = title.split('–');
@@ -25,11 +26,23 @@ const Project = ({
 
   return (
     <div
-      className="mb-10 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start justify-between"
+      className="group relative overflow-hidden mb-10 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start justify-between transition-all duration-300 hover:shadow-xl"
       style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
     >
+      {/* Background Image subtle gradient-masked overlay */}
+      {bgImage && (
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-right pointer-events-none transition-all duration-500 transform group-hover:scale-[1.03] opacity-10 group-hover:opacity-15"
+          style={{
+            backgroundImage: `url(${bgImage})`,
+            maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%)',
+            WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%)',
+          }}
+        />
+      )}
+
       {/* LEFT */}
-      <div className="w-full md:w-2/3 md:pr-6">
+      <div className="w-full md:w-2/3 md:pr-6 relative z-10">
         <h2 className="text-2xl font-bold mb-2">
           <span style={{ color: color, fontWeight: 'bold' }} className="mr-1">
             {highlight.trim()} –
@@ -95,7 +108,7 @@ const Project = ({
       </div>
 
       {/* RIGHT — Compact Badge */}
-      <div className="w-full md:w-1/3 flex flex-col items-center md:items-end mt-6 md:mt-0">
+      <div className="w-full md:w-1/3 flex flex-col items-center md:items-end mt-6 md:mt-0 relative z-10">
 
         <div
           className="flex items-center px-3 py-1.5 rounded-full font-medium mb-4"
@@ -144,7 +157,8 @@ Project.propTypes = {
       })
     )
   ]),
-  note: PropTypes.string        // <-- NEW
+  note: PropTypes.string,
+  bgImage: PropTypes.string
 };
 
 export default Project;

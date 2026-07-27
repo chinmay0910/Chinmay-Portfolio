@@ -12,6 +12,7 @@ const ProjectPage = () => {
       description: "Designing and developing a large-scale, AI-driven cybersecurity orchestration platform that automates offensive threat emulation and defensive analysis. The offensive (Red Team) module performs autonomous subdomain discovery, identifies vulnerability surfaces, and maps target-specific attack vectors. The defensive (Blue Team) module conducts static application security testing (SAST) and aggregates log streams from network security monitoring tools like Wazuh SIEM and Suricata IDS, using AI reasoning for real-time alert triage.",
       status: "Ongoing",
       color: "#FF5722",
+      bgImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
       categories: ["Cybersecurity", "AI & ML"],
       papers: [
         <img key="1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-10 h-10" alt="Python / AI Engine" />,
@@ -27,6 +28,7 @@ const ProjectPage = () => {
       status: "Secure",
       note: "It was set up in a closed air-gapped environment so no live links or source code repositories can be provided.",
       color: "#c936ff",
+      bgImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
       categories: ["Cybersecurity"],
       papers: [
         <img key="1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10" alt="React" />,
@@ -41,6 +43,7 @@ const ProjectPage = () => {
       status: "Secure",
       note: "Deployed on secure military networks for national cyber defense exercises; links and repositories are restricted.",
       color: "#37474F",
+      bgImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
       categories: ["Cybersecurity", "AI & ML"],
       papers: [
         <img key="1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" className="w-10 h-10" alt="Unity" />,
@@ -54,6 +57,7 @@ const ProjectPage = () => {
       description: "Contributed to the full-cycle development, core architectural refactoring, and performance tuning of the official web portal for the Centre for Land Warfare Studies (CLAWS) — an autonomous national security think-tank under the Government of India. Developed on a customized, high-security WordPress core, engineered to distribute military research journals, defense papers, and strategic insights. Optimized database schema indexing and asset delivery to sustain high academic traffic loads while hardening the server interface against cyber threat footprints.",
       status: "Live",
       color: "#df3400",
+      bgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
       categories: ["Web Development"],
       live: [
         { label: "Live Website", url: "https://claws.co.in/" }
@@ -70,6 +74,7 @@ const ProjectPage = () => {
       description: "Contributed to the design, frontend engineering, and release pipeline of the official platform for the World Cyber Security Summit (W3CS) — a premier global cybersecurity conference. Developed in direct coordination with the co-founder of BSides Bangalore and the founder of W3CS. Engineered the platform to support dynamic speaker onboarding workflows, session scheduling, attendee registrations, and seamless user experiences for thousands of global cybersecurity professionals.",
       status: "Live",
       color: "#00ACC1",
+      bgImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80",
       categories: ["Cybersecurity", "Web Development"],
       live: [
         { label: "Live Website", url: "https://www.w3-cs.com/" }
@@ -87,6 +92,7 @@ const ProjectPage = () => {
       status: "Live",
       note: "Successfully published on the Google Play Store.",
       color: "#0288D1",
+      bgImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80",
       categories: ["Mobile Apps"],
       live: [
         { label: "Live Website", url: "https://myskymate.com" },
@@ -106,6 +112,7 @@ const ProjectPage = () => {
       status: "Live",
       note: "Successfully published on the Google Play Store.",
       color: "#E91E63",
+      bgImage: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80",
       categories: ["Mobile Apps"],
       live: [
         { label: "Live Website", url: "https://wazebi.com" },
@@ -123,6 +130,7 @@ const ProjectPage = () => {
       description: "An AI-powered WhatsApp automation tool that enables sending bulk customized marketing and icebreaking messages to collected leads. Integrated with Meta Cloud APIs for message transmission, Llama LLMs for custom icebreaker generation based on lead profiles, and MongoDB for scalable lead database storage.",
       status: "Live",
       color: "#25D366",
+      bgImage: "https://images.unsplash.com/photo-1520607117402-dd1992095f9d?auto=format&fit=crop&w=600&q=80",
       categories: ["AI & ML", "Web Development"],
       github: "https://github.com/chinmay0910/Whatsapp-ChatBot",
       papers: [
@@ -137,6 +145,7 @@ const ProjectPage = () => {
       description: "A cybersecurity testing and awareness platform designed for organizations to run mock phishing campaigns on their employees. Built with Node.js, Express, and MongoDB, featuring full campaign tracking capabilities including real-time email open and link click activity logging.",
       status: "Live",
       color: "#EF5350",
+      bgImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80",
       categories: ["Cybersecurity", "Web Development"],
       github: "https://github.com/chinmay0910/PhishingMails_Admin",
       papers: [
@@ -151,6 +160,7 @@ const ProjectPage = () => {
       description: "A complete event booking and organization platform developed during a 3-day hackathon, securing the first prize. Features real-time bookings, event hosting controls, and user registrations built using the MERN stack.",
       status: "Live",
       color: "#4CAF50",
+      bgImage: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
       categories: ["Web Development"],
       github: "https://github.com/chinmay0910/Event-Management-System",
       live: [
@@ -168,6 +178,7 @@ const ProjectPage = () => {
       description: "A logistics and shipping platform featuring end-to-end package tracking, user-friendly interfaces, and secure Razorpay payment gateway integration. Uses Leaflet, Mapbox, and OpenCage APIs for high-accuracy geocoding and real-time mapping.",
       status: "Live",
       color: "#FF9800",
+      bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80",
       categories: ["Web Development"],
       github: "https://github.com/chinmay0910/ExpressDelivery",
       live: [
@@ -185,6 +196,7 @@ const ProjectPage = () => {
       description: "An AI-powered carpooling application designed to enhance passenger safety. Features a real-time violence detection system powered by a supervised Machine Learning model trained on violence image datasets. Integrated with the Google Maps API to track routes and automatically alert the nearest police station in the event of detected violence.",
       status: "Live",
       color: "#3F51B5",
+      bgImage: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80",
       categories: ["AI & ML", "Mobile Apps"],
       github: "https://github.com/chinmay0910/CarpoolingApp",
       papers: [
@@ -199,6 +211,7 @@ const ProjectPage = () => {
       description: "A machine learning dashboard that predicts stock price movements in real-time. Built with Python and Streamlit, utilizing Long Short-Term Memory (LSTM) recurrent neural networks and BeautifulSoup for web scraping current market rates.",
       status: "Live",
       color: "#00BCD4",
+      bgImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80",
       categories: ["AI & ML"],
       github: "https://github.com/chinmay0910/Stock-Price-Prediction",
       papers: [
@@ -212,6 +225,7 @@ const ProjectPage = () => {
       description: "A web application designed for insurance agents to auto-generate customized client presentations. Built with HTML, CSS, JavaScript, and Node/Express backend with MongoDB to store client templates and records.",
       status: "Live",
       color: "#9C27B0",
+      bgImage: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
       categories: ["Web Development"],
       github: "https://github.com/chinmay0910/premiumCalculator",
       live: [
@@ -280,6 +294,7 @@ const ProjectPage = () => {
             github={project.github}
             papers={project.papers}
             color={project.color}
+            bgImage={project.bgImage}
           />
         ))}
       </div>
