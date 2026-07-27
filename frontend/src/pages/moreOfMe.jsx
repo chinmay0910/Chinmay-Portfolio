@@ -1,28 +1,35 @@
-// src/pages/MoreOfMe.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 
 function MoreOfMe() {
+  const galleryItems = [
+    {
+      title: "Volunteered CTF event held in BSides 2026",
+      description: "Assisted in coordinating, building, and executing the Capture The Flag (CTF) challenges for BSides Bangalore 2026.",
+      src: "/bsides.jpeg"
+    },
+    {
+      title: "First Prize — Team Kalki",
+      description: "Designed and developed an award-winning event management system during a 3-day hackathon, securing the first prize.",
+      src: "/kalki-price.jpg"
+    },
+    {
+      title: "Rajasthan Police Hackathon Finalist",
+      description: "Selected as national finalists at the Rajasthan Police Hackathon for designing predictive intelligence software.",
+      src: "/rajasthan-police.jpg"
+    },
+    {
+      title: "AI Made Me Rich Hackathon — 1st Prize Winners",
+      description: "Won the first prize at the national-level AI hackathon for building custom financial intelligence dashboards.",
+      src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+    }
+  ];
+
   return (
     <section
-      className="min-h-screen px-6 py-16 font-sans transition-colors duration-500"
+      className="min-h-screen px-6 py-12 font-sans transition-colors duration-500 flex justify-center"
       style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}
     >
-      <div className="max-w-4xl mx-auto text-left">
-        
-        {/* 🧭 Back Button */}
-        <Link
-          to="/"
-          className="inline-block mb-8 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:opacity-80"
-          style={{
-            backgroundColor: "var(--card-bg)",
-            color: "var(--text-color)",
-            border: "1px solid var(--muted-text)",
-          }}
-        >
-          ← Back to Home
-        </Link>
-
+      <div className="max-w-5xl w-full text-left">
         <h1
           className="text-4xl font-extrabold mb-4 tracking-tight"
           style={{ color: "var(--text-color)" }}
@@ -32,7 +39,7 @@ function MoreOfMe() {
 
         <p
           className="text-lg mb-12 leading-relaxed"
-          style={{ color: "var(--link-text)" }}
+          style={{ color: "var(--text-color)", opacity: 0.8 }}
         >
           An overview of my academic background, technical training, leadership positions, and scholastic honors.
         </p>
@@ -43,8 +50,9 @@ function MoreOfMe() {
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
-              backgroundColor: "var(--card-bg)",
-              color: "var(--link-text)",
+              backgroundColor: "var(--button-bg)",
+              border: "1px solid var(--link-bg-hover)",
+              color: "var(--text-color)",
             }}
           >
             <h2
@@ -58,24 +66,24 @@ function MoreOfMe() {
                 <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
                   Bachelor of Computer Engineering
                 </h3>
-                <p className="text-sm font-medium">Vidyalankar Institute of Technology, Mumbai</p>
-                <p className="text-xs mt-1">2022 – 2025 · CGPA: 9.87</p>
+                <p className="text-sm font-medium" style={{ opacity: 0.9 }}>Vidyalankar Institute of Technology, Mumbai</p>
+                <p className="text-xs mt-1" style={{ opacity: 0.75 }}>2022 – 2025 · CGPA: 9.87</p>
               </div>
 
               <div className="border-l-2 border-blue-500 pl-4">
                 <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
                   Diploma in Civil Engineering
                 </h3>
-                <p className="text-sm font-medium">Government Polytechnic Mumbai</p>
-                <p className="text-xs mt-1">2019 – 2022 · Percentage: 93.13%</p>
+                <p className="text-sm font-medium" style={{ opacity: 0.9 }}>Government Polytechnic Mumbai</p>
+                <p className="text-xs mt-1" style={{ opacity: 0.75 }}>2019 – 2022 · Percentage: 93.13%</p>
               </div>
 
               <div className="border-l-2 border-blue-500 pl-4">
                 <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
                   SSC (Secondary School Certificate)
                 </h3>
-                <p className="text-sm font-medium">Rita Memorial School · Maharashtra Board</p>
-                <p className="text-xs mt-1">2018 – 2019 · Percentage: 87.60%</p>
+                <p className="text-sm font-medium" style={{ opacity: 0.9 }}>Rita Memorial School · Maharashtra Board</p>
+                <p className="text-xs mt-1" style={{ opacity: 0.75 }}>2018 – 2019 · Percentage: 87.60%</p>
               </div>
             </div>
           </article>
@@ -84,8 +92,9 @@ function MoreOfMe() {
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
-              backgroundColor: "var(--card-bg)",
-              color: "var(--link-text)",
+              backgroundColor: "var(--button-bg)",
+              border: "1px solid var(--link-bg-hover)",
+              color: "var(--text-color)",
             }}
           >
             <h2
@@ -99,9 +108,9 @@ function MoreOfMe() {
                 <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
                   Web-Head
                 </h3>
-                <p className="text-sm font-medium">CESAVIT — Vidyalankar Institute of Technology</p>
-                <p className="text-xs mt-1">July 2023</p>
-                <p className="mt-2 text-sm">
+                <p className="text-sm font-medium" style={{ opacity: 0.9 }}>CESAVIT — Vidyalankar Institute of Technology</p>
+                <p className="text-xs mt-1" style={{ opacity: 0.75 }}>July 2023</p>
+                <p className="mt-2 text-sm" style={{ opacity: 0.85 }}>
                   Led a web team of 4 developers to build, enhance, and optimize the society website. Collaborated on planning and organizing campus technical events.
                 </p>
               </div>
@@ -110,9 +119,9 @@ function MoreOfMe() {
                 <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
                   Head
                 </h3>
-                <p className="text-sm font-medium">Nirmaan — Government Polytechnic Mumbai</p>
-                <p className="text-xs mt-1">January 2021</p>
-                <p className="mt-2 text-sm">
+                <p className="text-sm font-medium" style={{ opacity: 0.9 }}>Nirmaan — Government Polytechnic Mumbai</p>
+                <p className="text-xs mt-1" style={{ opacity: 0.75 }}>January 2021</p>
+                <p className="mt-2 text-sm" style={{ opacity: 0.85 }}>
                   Led a college event team of 18 students to successfully organize, market, and execute various inter-college and intra-college events.
                 </p>
               </div>
@@ -123,8 +132,9 @@ function MoreOfMe() {
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
-              backgroundColor: "var(--card-bg)",
-              color: "var(--link-text)",
+              backgroundColor: "var(--button-bg)",
+              border: "1px solid var(--link-bg-hover)",
+              color: "var(--text-color)",
             }}
           >
             <h2
@@ -173,8 +183,9 @@ function MoreOfMe() {
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
-              backgroundColor: "var(--card-bg)",
-              color: "var(--link-text)",
+              backgroundColor: "var(--button-bg)",
+              border: "1px solid var(--link-bg-hover)",
+              color: "var(--text-color)",
             }}
           >
             <h2
@@ -215,9 +226,56 @@ function MoreOfMe() {
             </ul>
           </article>
 
+          {/* --- Section 5: Gallery / Media --- */}
+          <article
+            className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            style={{
+              backgroundColor: "var(--button-bg)",
+              border: "1px solid var(--link-bg-hover)",
+              color: "var(--text-color)",
+            }}
+          >
+            <h2
+              className="text-2xl font-bold mb-6 flex items-center gap-2"
+              style={{ color: "var(--text-color)" }}
+            >
+              <span>🖼️</span> Gallery
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {galleryItems.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="group relative overflow-hidden rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+                  style={{
+                    backgroundColor: "var(--bg-color)",
+                    border: "1px solid var(--link-bg-hover)",
+                  }}
+                >
+                  <div className="aspect-video w-full overflow-hidden">
+                    <img
+                      src={item.src}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85 group-hover:opacity-100"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h4 className="font-bold text-lg mb-2" style={{ color: "var(--text-color)" }}>
+                      {item.title}
+                    </h4>
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--text-color)", opacity: 0.8 }}>
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
   );
 }
+
 export default MoreOfMe;

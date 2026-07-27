@@ -8,7 +8,7 @@ const ProjectPage = () => {
 
   const projectsData = [
     {
-      title: "AegisSec – AI-Powered Red vs. Blue Threat Emulation Platform",
+      title: "ShieldAI – AI-Powered Red vs. Blue Threat Emulation Platform",
       description: "Designing and developing a large-scale, AI-driven cybersecurity orchestration platform that automates offensive threat emulation and defensive analysis. The offensive (Red Team) module performs autonomous subdomain discovery, identifies vulnerability surfaces, and maps target-specific attack vectors. The defensive (Blue Team) module conducts static application security testing (SAST) and aggregates log streams from network security monitoring tools like Wazuh SIEM and Suricata IDS, using AI reasoning for real-time alert triage.",
       status: "Ongoing",
       color: "#FF5722",

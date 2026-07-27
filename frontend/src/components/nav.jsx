@@ -4,6 +4,7 @@ import {
   Home,
   FolderGit2,
   BriefcaseBusiness,
+  Trophy,
   Github,
   FileText,
   Menu,
@@ -24,6 +25,8 @@ const App = () => {
       setActiveLink("Projects");
     } else if (currentPath.includes("experience")) {
       setActiveLink("Experience");
+    } else if (currentPath.includes("achievements")) {
+      setActiveLink("Achievements");
     } else if (currentPath.includes("contact")) {
       setActiveLink("Contact");
     } else {
@@ -74,6 +77,16 @@ const App = () => {
           >
             <BriefcaseBusiness size={18} />
             <span>Experience</span>
+          </Link>
+
+          <Link
+            to="/achievements"
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-full transition-colors duration-200 ${
+              activeLink === "Achievements" ? "bg-gray-700" : "hover:bg-gray-800"
+            }`}
+          >
+            <Trophy size={18} />
+            <span>Achievements</span>
           </Link>
         </div>
       </div>
@@ -141,6 +154,17 @@ const App = () => {
           >
             <BriefcaseBusiness size={18} />
             Experience
+          </Link>
+
+          <Link
+            to="/achievements"
+            onClick={() => setMenuOpen(false)}
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg ${
+              activeLink === "Achievements" ? "bg-gray-700" : "hover:bg-gray-800"
+            }`}
+          >
+            <Trophy size={18} />
+            Achievements
           </Link>
         </div>
       )}

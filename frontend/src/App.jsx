@@ -19,12 +19,9 @@ const Loading = () => (
 );
 
 function App() {
-  const location = useLocation();
-  const hideNavbar = location.pathname === "/more";
-
   return (
     <>
-      {!hideNavbar && <NavBar />}
+      <NavBar />
 
       <Suspense fallback={<Loading />}>
         <Routes>
@@ -41,6 +38,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/more" element={<MoreOfMe />} />
+          <Route path="/achievements" element={<MoreOfMe />} />
         </Routes>
       </Suspense>
 

@@ -150,19 +150,19 @@ const Home = () => {
       Chinmay Mhatre
     </span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>
       Sr. Software Engineer
-    </span> experienced in building scalable web apps, containerized systems, and cybersecurity platforms.
+    </span> at Hacktify Cybersecurity and a specialized Full-Stack & DevOps Engineer. Driven by a passion for Artificial Intelligence and actively contributing to national security, I had the privilege of serving on the core development team for <span className="font-semibold" style={{ color: "var(--text-color)" }}>Cyber Suraksha 2024 & 2025</span> and <span className="font-semibold" style={{ color: "var(--text-color)" }}>Cyber Shakti 2024 & 2025</span>. These strategic initiatives were organized for the Defence Cyber Agency (DCyA) to strengthen India's cyber defenses, during which I also had the distinct honor of meeting <span className="font-semibold" style={{ color: "var(--text-color)" }}>CDS General Anil Chauhan</span>.
   </p>
   <p
     className="text-base sm:text-lg mb-4 leading-relaxed"
     style={{ color: "var(--link-text)" }}
   >
-    From designing dynamic cyber-attack simulations and secure container challenge hosting to orchestrating real-time communication protocols, I focus on building high-performance, robust software.
+    My extensive work with the Indian Armed Forces includes serving on the organizer development team for a tri-services exercise hosted by the <span className="font-semibold" style={{ color: "var(--text-color)" }}>Indian Navy</span>. I have also developed the official website for the Centre for Land Warfare Studies (CLAWS) under the Government of India. Furthermore, I built the digital platforms for India's largest cyber conferences, including BSides Bangalore and World-Wide Women in CyberSecurity (W3CS).
   </p>
   <p
     className="text-base sm:text-lg mb-4 leading-relaxed"
     style={{ color: "var(--link-text)" }}
   >
-    When I’m not coding, you’ll find me leading engineering event groups, configuring local DevOps build flows, or designing user-centric application UI prototypes.
+    I played a pivotal role in setting up India's first Cyber Range for Defense at the <span className="font-semibold" style={{ color: "var(--text-color)" }}>Indian Air Force</span> base in Jalahalli, Bangalore. Currently, I am engineering advanced Cyber Ranges for the <span className="font-semibold" style={{ color: "var(--text-color)" }}>Indian Army</span>, empowering their tactical cybersecurity capabilities.
   </p>
   <p className="text-base sm:text-lg mb-4 leading-relaxed">
     Connect with me on{" "}
@@ -187,19 +187,19 @@ const Home = () => {
     </a>
     .
   </p>
- <p
-  className="text-sm sm:text-base italic mt-6"
-  style={{ color: "var(--muted-text)" }}
->
-  Curious about my education, certs, and scholastic achievements?{" "}
-  <Link
-    to="/more"
-    className="hover:underline"
-    style={{ color: "var(--text-color)" }}
+  <p
+    className="text-sm sm:text-base italic mt-6"
+    style={{ color: "var(--muted-text)" }}
   >
-    Discover my Education & Achievements →
-  </Link>
-</p>
+    Curious about my education, certs, and scholastic achievements?{" "}
+    <Link
+      to="/achievements"
+      className="hover:underline"
+      style={{ color: "var(--text-color)" }}
+    >
+      Discover my Education & Achievements →
+    </Link>
+  </p>
 </section>
 
 
