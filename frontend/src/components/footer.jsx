@@ -16,17 +16,17 @@ const Footer = () => {
         {/* Left: Name & tagline */}
         <div className="text-center sm:text-left mb-4 sm:mb-0">
           <h4 className="text-sm font-semibold" style={{ color: 'var(--text-color)' }}>
-            Adarsh Srivastava
+            Chinmay Mhatre
           </h4>
           <p className="text-xs" style={{ color: 'var(--link-text)' }}>
-            Software Developer
+            Sr. Software Engineer
           </p>
         </div>
 
         {/* Right: Social Links */}
         <div className="flex space-x-4">
           <a
-            href="https://github.com/AdarshKumarSr"
+            href="https://github.com/chinmay0910/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'var(--link-text)' }}
@@ -37,7 +37,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
+            href="https://www.linkedin.com/in/chinmay-mhatre-a361601aa"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#0A66C2' }}
@@ -48,7 +48,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/adarsh3e8/"
+            href="https://www.instagram.com/chinmay7543"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#E1306C' }}
@@ -56,17 +56,6 @@ const Footer = () => {
             aria-label="Instagram"
           >
             <SiInstagram size={18} />
-          </a>
-
-          <a
-            href="https://x.com/adarsh3e8"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: 'var(--text-color)' }}
-            className="hover:opacity-70 transition-opacity duration-200"
-            aria-label="X"
-          >
-            <SiX size={18} />
           </a>
         </div>
       </div>
@@ -76,10 +65,10 @@ const Footer = () => {
         className="text-center py-2 text-xs"
         style={{ color: 'var(--link-text)' }}
       >
-        © {new Date().getFullYear()} Adarsh Srivastava · Software Developer
+        © {new Date().getFullYear()} Chinmay Mhatre · Sr. Software Engineer
       </div>
 
-      <VisitorCountInline />
+      {/* <VisitorCountInline /> */}
     </footer>
   );
 };

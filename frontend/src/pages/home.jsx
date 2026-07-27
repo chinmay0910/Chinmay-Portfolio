@@ -2,28 +2,27 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import profile from '../assets/profile.jpg';
-import Testimonials from '../components/testimonials.jsx';
 import RotatingText from '../components/text.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
 
   const techStackIcons = [
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", alt: "C++" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "Java" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" },
-    { src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdsaOH3LxJisOtkMCdTpqEn-HJmauzZl68A&s", alt: "Postman" },
-    { src:"https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/63018721094449d9901f5875_cff297d7.png", alt: "Firebase" },
-    { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCzIa9WkTmFYqEthuD7jFKuEYSnJA2yG3dQ&s", alt: "Render" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "SQL" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", alt: "Figma" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", alt: "Spring" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", alt: "Express.js" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", alt: "Node.js" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", alt: "Express.js" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", alt: "Docker" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg", alt: "Kubernetes" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", alt: "AWS" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", alt: "Redis" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "MySQL" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", alt: "Flutter" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg", alt: "Unity" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "Java" },
+    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
   ];
 
   return (
@@ -51,7 +50,7 @@ const Home = () => {
   "
 >
   <span className="whitespace-nowrap">
-    hi, I'm <span className="text-blue-500">Adarsh</span>
+    hi, I'm <span className="text-blue-500">Chinmay</span>
   </span>
 
   {/* Rotating Text Section */}
@@ -66,7 +65,7 @@ const Home = () => {
     "
   >
     <RotatingText
-      texts={["Software Engineer", "Freelancer"]}
+      texts={["Sr. Software Engineer", "Full-Stack Developer", "Cybersecurity Developer"]}
       mainClassName="
         rotating-text
         inline-flex 
@@ -148,28 +147,27 @@ const Home = () => {
     style={{ color: "var(--link-text)" }}
   >
     I’m <span className="font-semibold" style={{ color: "var(--text-color)" }}>
-      Adarsh Srivastava
+      Chinmay Mhatre
     </span>, a <span className="font-semibold" style={{ color: "var(--text-color)" }}>
-      Software developer
-    </span> who loves turning ideas into clean, scalable web experiences.
+      Sr. Software Engineer
+    </span> experienced in building scalable web apps, containerized systems, and cybersecurity platforms.
   </p>
   <p
     className="text-base sm:text-lg mb-4 leading-relaxed"
     style={{ color: "var(--link-text)" }}
   >
-    From leading hackathon teams to delivering real-world projects, I bring both
-    creativity and engineering discipline to the table.
+    From designing dynamic cyber-attack simulations and secure container challenge hosting to orchestrating real-time communication protocols, I focus on building high-performance, robust software.
   </p>
   <p
     className="text-base sm:text-lg mb-4 leading-relaxed"
     style={{ color: "var(--link-text)" }}
   >
-    When I’m not coding, you’ll find me diving into physics concepts, lifting at the gym, or crafting poetry that mirrors thought and emotion.
+    When I’m not coding, you’ll find me leading engineering event groups, configuring local DevOps build flows, or designing user-centric application UI prototypes.
   </p>
   <p className="text-base sm:text-lg mb-4 leading-relaxed">
     Connect with me on{" "}
     <a
-      href="https://www.linkedin.com/in/adarsh-srivastava-39a58b284/"
+      href="https://www.linkedin.com/in/chinmay-mhatre-a361601aa"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:underline font-medium"
@@ -179,7 +177,7 @@ const Home = () => {
     </a>{" "}
     and{" "}
     <a
-      href="https://www.instagram.com/adarsh3e8/"
+      href="https://www.instagram.com/chinmay7543"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:underline font-medium"
@@ -189,23 +187,23 @@ const Home = () => {
     </a>
     .
   </p>
- {/* <p
+ <p
   className="text-sm sm:text-base italic mt-6"
   style={{ color: "var(--muted-text)" }}
 >
-  Curious about what I write or explore beyond code?{" "}
+  Curious about my education, certs, and scholastic achievements?{" "}
   <Link
     to="/more"
     className="hover:underline"
     style={{ color: "var(--text-color)" }}
   >
-    Discover more of me →
+    Discover my Education & Achievements →
   </Link>
-</p> */}
+</p>
 </section>
 
 
-        <Testimonials />
+        {/* Testimonials removed to exclude previous owner data */}
       </main>
 
       <style>

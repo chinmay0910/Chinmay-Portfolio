@@ -81,7 +81,7 @@ const App = () => {
       {/* Right Side */}
       <div className="flex items-center space-x-3 mr-4">
         <a
-          href="https://github.com/AdarshKumarSr"
+          href="https://github.com/chinmay0910/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
@@ -92,21 +92,10 @@ const App = () => {
           />
         </a>
 
-        <a
-          href="https://leetcode.com/u/adarshkumar24/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LeetCode Profile"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
-            alt="LeetCode"
-            className="w-5 h-5 object-contain cursor-pointer hover:opacity-70 transition-opacity duration-200"
-          />
-        </a>
+        {/* LeetCode link removed as requested */}
 
         <a
-          href="/Adarsh_Resume.pdf"
+          href="/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="View Resume"

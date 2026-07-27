@@ -24,23 +24,22 @@ function MoreOfMe() {
         </Link>
 
         <h1
-          className="text-4xl font-serif mb-10"
+          className="text-4xl font-extrabold mb-4 tracking-tight"
           style={{ color: "var(--text-color)" }}
         >
-          More of Me
+          Education & Achievements
         </h1>
 
         <p
           className="text-lg mb-12 leading-relaxed"
           style={{ color: "var(--link-text)" }}
         >
-          A quiet corner where I share what I write, learn, and feel — from small poems
-          to passing thoughts.
+          An overview of my academic background, technical training, leadership positions, and scholastic honors.
         </p>
 
         <div className="space-y-12">
 
-          {/* --- Poem 1: Curse of October --- */}
+          {/* --- Section 1: Education --- */}
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
@@ -49,58 +48,39 @@ function MoreOfMe() {
             }}
           >
             <h2
-              className="text-2xl font-serif mb-3"
+              className="text-2xl font-bold mb-6 flex items-center gap-2"
               style={{ color: "var(--text-color)" }}
             >
-              “Curse of October”
+              <span>🎓</span> Education
             </h2>
-            <p className="leading-relaxed mb-4 whitespace-pre-line">
-              {`Me to October:
-Why am I feeling the thickness in the air?
-Oh…the October is near.
+            <div className="space-y-6">
+              <div className="border-l-2 border-blue-500 pl-4">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
+                  Bachelor of Computer Engineering
+                </h3>
+                <p className="text-sm font-medium">Vidyalankar Institute of Technology, Mumbai</p>
+                <p className="text-xs mt-1">2022 – 2025 · CGPA: 9.87</p>
+              </div>
 
-Oh October, what’s wrong with you?
-Do you have some personal issues?
-Do I owe you some unclear debt,
-Or are you playing some kind of act?
+              <div className="border-l-2 border-blue-500 pl-4">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
+                  Diploma in Civil Engineering
+                </h3>
+                <p className="text-sm font-medium">Government Polytechnic Mumbai</p>
+                <p className="text-xs mt-1">2019 – 2022 · Percentage: 93.13%</p>
+              </div>
 
-October: What’s wrong?
-
-Me: Whenever the season shifts to winter’s breath,
-You bring a pain that weighs upon my chest.
-Why are you so heartless, so fragile, so cold?
-Can’t you see my smile,  the joy you stole?
-
-October: Oh, my boy… what can I say?
-You poor soul, it’s your fate’s way.
-It’s nothing to do with me,
-Even I feel heavy when you bleed this way.
-
-Me: Oh sir, so I guess it’s just an unholy coincidence 
-That every year, when the calendar turns to ten,
-I meet this unbearable pain again and again.
-
-October: My boy, I know it’s hard on you,
-But these things are meant to make you tough too.
-You’ll have to find your path, fight your battle 
-You are a lone warrior; you live alone, you’ll die alone.
-
-So raise your head, and wear your crown 
-Live life king size!.`}
-            </p>
-
-            <img
-              src="https://i.pinimg.com/1200x/cc/4f/eb/cc4feb2031af41e2cbb57fc06cf1af4e.jpg"
-              alt="Curse of October"
-              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-            />
-
-            <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Oct 19, 2025
-            </p>
+              <div className="border-l-2 border-blue-500 pl-4">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
+                  SSC (Secondary School Certificate)
+                </h3>
+                <p className="text-sm font-medium">Rita Memorial School · Maharashtra Board</p>
+                <p className="text-xs mt-1">2018 – 2019 · Percentage: 87.60%</p>
+              </div>
+            </div>
           </article>
 
-          {/* --- Poem 2: Beyond the Nest --- */}
+          {/* --- Section 2: Positions of Responsibility --- */}
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
@@ -109,47 +89,37 @@ Live life king size!.`}
             }}
           >
             <h2
-              className="text-2xl font-serif mb-3"
+              className="text-2xl font-bold mb-6 flex items-center gap-2"
               style={{ color: "var(--text-color)" }}
             >
-              “Beyond the Nest”
+              <span>👥</span> Positions of Responsibility
             </h2>
-            <p className="leading-relaxed mb-4 whitespace-pre-line">
-              {`Once I was a chick of the nest,
-Afraid of flights,
-Thinking the nest was my whole life,
-Playing with my siblings all through the night.
+            <div className="space-y-6">
+              <div className="border-l-2 border-purple-500 pl-4">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
+                  Web-Head
+                </h3>
+                <p className="text-sm font-medium">CESAVIT — Vidyalankar Institute of Technology</p>
+                <p className="text-xs mt-1">July 2023</p>
+                <p className="mt-2 text-sm">
+                  Led a web team of 4 developers to build, enhance, and optimize the society website. Collaborated on planning and organizing campus technical events.
+                </p>
+              </div>
 
-Then one day a hurricane came,
-And shattered my whole sight.
-My dad protected us with all his might,
-Holding the nest, wings and claws clenched tight.
-
-But I could see the wildness of the wind,
-Weakening him night by night.
-It hurt my soul,
-To see my parents getting old.
-
-So, I made a choice; I leaped from the nest,
-And now I try my very best.
-
-Leaving them is never easy,
-But I have to fly,
-To see the limits of the sky.`}
-            </p>
-
-            <img
-              src="https://i.pinimg.com/736x/c3/83/80/c38380136b5e8fe3e1314cafcd6c1b9c.jpg"
-              alt="Beyond the Nest"
-              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-            />
-
-            <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Nov 10, 2024
-            </p>
+              <div className="border-l-2 border-purple-500 pl-4">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--text-color)" }}>
+                  Head
+                </h3>
+                <p className="text-sm font-medium">Nirmaan — Government Polytechnic Mumbai</p>
+                <p className="text-xs mt-1">January 2021</p>
+                <p className="mt-2 text-sm">
+                  Led a college event team of 18 students to successfully organize, market, and execute various inter-college and intra-college events.
+                </p>
+              </div>
+            </div>
           </article>
 
-          {/* --- Poem 3: Unseen --- */}
+          {/* --- Section 3: Training & Certifications --- */}
           <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
@@ -158,36 +128,49 @@ To see the limits of the sky.`}
             }}
           >
             <h2
-              className="text-2xl font-serif mb-3"
+              className="text-2xl font-bold mb-6 flex items-center gap-2"
               style={{ color: "var(--text-color)" }}
             >
-              “Unseen”
+              <span>📜</span> Training & Certifications
             </h2>
-            <p className="leading-relaxed mb-4 whitespace-pre-line">
-              {`When someone looks, they see only the rain,
-A quiet, faded drop, lost and plain.
-Just a dull reflection, with nothing to shine,
-A flower forgotten, left behind.
-
-Not a star in the sky or a spark in the night,
-Just a shadow that blends, out of sight.
-No warmth, no glow, no beauty to see,
-Nothing that stands out in me.`}
-            </p>
-
-            <img
-              src="https://i.pinimg.com/1200x/b6/48/98/b6489862b94e731b4c2f10281c09f6c9.jpg"
-              alt="Unseen"
-              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-            />
-
-            <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Dec 31, 2024
-            </p>
+            <ul className="space-y-4 text-sm font-medium">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500">✔</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>AWS Academy Cloud Foundations</span>
+                  <span className="mx-2 text-xs">·</span>
+                  <span className="text-xs opacity-75">AWS Academy [March 2024]</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500">✔</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>Prompt Engineering</span>
+                  <span className="mx-2 text-xs">·</span>
+                  <span className="text-xs opacity-75">Vanderbilt University via Coursera [October 2023]</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500">✔</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>Agile Scrum Master (ASM®)</span>
+                  <span className="mx-2 text-xs">·</span>
+                  <span className="text-xs opacity-75">SimpliLearn [October 2023]</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500">✔</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>Python for Data Science</span>
+                  <span className="mx-2 text-xs">·</span>
+                  <span className="text-xs opacity-75">Infosys [April 2023]</span>
+                </div>
+              </li>
+            </ul>
           </article>
 
-          {/* --- Poem 4: घर — बदला हुआ, मगर वही --- */}
-          {/* <article
+          {/* --- Section 4: Scholastic Achievements --- */}
+          <article
             className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             style={{
               backgroundColor: "var(--card-bg)",
@@ -195,62 +178,46 @@ Nothing that stands out in me.`}
             }}
           >
             <h2
-              className="text-2xl font-serif mb-3"
+              className="text-2xl font-bold mb-6 flex items-center gap-2"
               style={{ color: "var(--text-color)" }}
             >
-              “मेरा वो घर”
+              <span>🏆</span> Scholastic Achievements
             </h2>
-            <p className="leading-relaxed mb-4 whitespace-pre-line font-[Noto_Serif_Devanagari]">
-              {`आज जब मैं लम्बे अरसे बाद घर आया,
-कुछ अलग-सा महसूस हुआ।
-घर की बूढ़ी दीवारें भी नई-सी लग रही थीं,
-घर में रंग लगाया गया था,  दिवाली पास है, क्यों न हो।
-
-फिर अचानक वही पुरानी, जानी-पहचानी गाड़ी की आवाज़ आई,
-पापा आ गए थे।
-वो भी कुछ अलग से लगे 
-वो चेहरा जिसे मैंने हमेशा एक रौब और तशन के साथ देखा था,
-आज मुझे देखकर मुस्कुरा रहा था।
-मैं खुश था।
-
-उनकी वो आँखें,
-जिनसे मैं कभी नज़रें नहीं मिला पाया,
-आज उनमें एक अलग-सी चमक थी 
-जैसे वो मुझे एक कामयाब इंसान के रूप में देखना चाहती हों।
-उम्मीद से भरी वो आँखें बहुत कुछ कह रही थीं,
-और मैं सब अपने मन से सुन रहा था।
-
-फिर ऊपर वाली सीढ़ी से पायल की छम-छम की आवाज़ आई 
-माँ आ रही थीं।
-उनका तो क्या ही कहना,
-वो तो खुशी से फूली नहीं समा रही थीं,
-मानो कब से मेरे दीदार को बेचैन थीं।
-
-पीछे मेरा भाई था 
-वो छोटा-सा लड़का जो कभी मेरे कंधे तक भी नहीं आता था,
-आज मुझसे ऊँचा लग रहा था।
-वो भी बड़ा खुश था  क्यों न हो,
-भाई साहब का नया फ़ोन जो आया था! 😄
-
-ख़ैर...
-समय है  बदलता है, बदल गया। 🩷🧿`}
-            </p>
-
-            <img
-              src="https://i.pinimg.com/736x/48/70/43/487043ae8903b01ae1116e0d2364fcad.jpg"
-              alt="घर बदला हुआ, मगर वही"
-              className="rounded-xl mt-4 opacity-90 hover:opacity-100 transition w-full h-80 object-contain bg-[#1a1a1a]"
-            />
-
-            <p className="text-sm mt-3" style={{ color: "var(--muted-text)" }}>
-              Written on Oct 20, 2025
-            </p>
-          </article> */}
+            <ul className="space-y-4 text-sm font-medium">
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-500">🥇</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>First Prize — AI Made Me Rich Hackathon</span>
+                  <p className="text-xs opacity-75 mt-0.5">VIT, Mumbai [April 2024]</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-500">🥇</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>First Prize — Fr. Agnel College of Engineering Hackathon</span>
+                  <p className="text-xs opacity-75 mt-0.5">Navi Mumbai [March 2024]</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-500">⭐</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>Finalist — Rajasthan Police Hackathon</span>
+                  <p className="text-xs opacity-75 mt-0.5">Jaipur [January 2024]</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-500">🥇</span>
+                <div>
+                  <span className="font-semibold" style={{ color: "var(--text-color)" }}>First Prize — Tech-Talk Competition</span>
+                  <p className="text-xs opacity-75 mt-0.5">Universal College of Engineering [August 2021]</p>
+                </div>
+              </li>
+            </ul>
+          </article>
 
         </div>
       </div>
     </section>
   );
 }
-
 export default MoreOfMe;

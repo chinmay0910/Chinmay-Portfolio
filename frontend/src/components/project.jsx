@@ -62,17 +62,34 @@ const Project = ({
           )}
 
           {live && (
-            <a
-              href={live}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View live project"
-              className="inline-flex items-center font-medium mb-2 px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-800 hover:text-white transition"
-              style={{ color: '#0366d6' }}
-            >
-              <FaExternalLinkAlt className="mr-2" />
-              Live Demo
-            </a>
+            Array.isArray(live) ? (
+              live.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label || "View live project"}
+                  className="inline-flex items-center font-medium mb-2 px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-800 hover:text-white transition"
+                  style={{ color: '#0366d6' }}
+                >
+                  <FaExternalLinkAlt className="mr-2" />
+                  {link.label || "Live Demo"}
+                </a>
+              ))
+            ) : (
+              <a
+                href={live}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View live project"
+                className="inline-flex items-center font-medium mb-2 px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-800 hover:text-white transition"
+                style={{ color: '#0366d6' }}
+              >
+                <FaExternalLinkAlt className="mr-2" />
+                Live Demo
+              </a>
+            )
           )}
         </div>
       </div>
@@ -118,7 +135,15 @@ Project.propTypes = {
   papers: PropTypes.array,
   status: PropTypes.string,
   github: PropTypes.string,
-  live: PropTypes.string,
+  live: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string,
+        url: PropTypes.string.isRequired
+      })
+    )
+  ]),
   note: PropTypes.string        // <-- NEW
 };
 
